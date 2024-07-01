@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind</title>
+
+    <!-- font awesome cnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="p-10 divide-y flex flex-col gap-6">
+
+
+
+
+
+    <!-- According Test -->
+
+    <div class=" p-10 flex flex-col gap-y-6">
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class="font-medium ">Accordion Text</p>
+            <i class="fa-brands fa-square-js text-xl"></i>
+        </div>
+
+        <div
+            class="flex justify-start items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-4 h-96 md:h-auto">
+
+            <div id="mainDiv" class=" expander ">
+                <div class="flex flex-row justify-between  w-full items-center" id="vissible">
+                    <h1 class=" vissible_icons">First Label</h1>
+
+                    <i class="fa-solid fa-angle-down vissible_icons " id="arowICON"></i>
+                </div>
+
+                <p id="according" class="text-sm overflow-hidden h-0 transition-all duration-500  text-slate-500 mt-1">
+                    Feel free to unleash your imagination and let your words flow without inhibition. There are no
+                    constraints here; only the boundless potential of your ideas awaits.
+                </p>
+            </div>
+
+            <div class=" expander ">
+                <div class="flex flex-row justify-between  w-full items-center" id="vissible">
+                    <h1 class=" vissible_icons">Second Label</h1>
+
+                    <i class="fa-solid fa-angle-down vissible_icons " id="arowICON"></i>
+                </div>
+
+                <p id="according" class="text-sm overflow-hidden h-0 transition-all duration-500  text-slate-500 mt-1">
+                    Feel free to unleash your imagination and let your words flow without inhibition. There are no
+                    constraints here; only the boundless potential of your ideas awaits.
+                </p>
+            </div>
+
+            <div class=" expander ">
+                <div class="flex flex-row justify-between  w-full items-center" id="vissible">
+                    <h1 class=" vissible_icons">Third Label</h1>
+
+                    <i class="fa-solid fa-angle-down vissible_icons " id="arowICON"></i>
+                </div>
+
+                <p id="according" class="text-sm overflow-hidden h-0 transition-all duration-500  text-slate-500 mt-1">
+                    Feel free to unleash your imagination and let your words flow without inhibition. There are no
+                    constraints here; only the boundless potential of your ideas awaits.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Breadcrumbs - Collapsed -->
+    <div class=" p-10 flex flex-col gap-y-6">
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class="font-medium ">Breadcrumbs - Collapsed</p>
+            <i class="fa-brands fa-square-js text-xl"></i>
+        </div>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-44">
+
+            <div class="flex flex-row gap-x-2.5 items-center">
+
+                <a href="#" class="text-slate-400 flex flex-row gap-1.5 items-center">
+                    <i class="fa-solid fa-house-chimney mt-[6px]"></i>
+                    <p class="text-md transition-colors ease-in-out duration-300 hover:text-blue-700 font-[500]">
+                        Dashboard</p>
+                </a>
+
+                <i class="fa-solid fa-angle-right text-[10px] text-slate-400 mt-[4px]"></i>
+
+                <div class="flex flex-row items-center">
+                    <p id="threeDOT_Breadcrumbs" class="cursor-pointer text-[28px] mb-[17px] text-slate-400">...</p>
+                    <div id="display_Breadcrumbs" class=" items-center gap-2.5 hidden">
+                        <a href=""
+                            class="flex flex-row gap-x-1.5 items-center text-md font-[500] transition-colors ease-in-out duration-300 hover:text-blue-700 text-slate-400">
+                            <i class="fa-solid fa-gear mt-1 "></i>
+                            <p>Setting</p>
+                        </a>
+
+                        <i class="fa-solid fa-angle-right text-[10px] text-slate-400 mt-[5px]"></i>
+
+                        <a href=""
+                            class="flex flex-row gap-x-1.5 items-center text-md font-[500] transition-colors ease-in-out duration-300 hover:text-blue-700 text-slate-400">
+                            <i class="fa-solid fa-user-group mt-1"></i>
+                            <p>Users</p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <i class="fa-solid fa-angle-right text-[10px] text-slate-400 mt-[4px]"></i>
+
+                <a href=""
+                    class="flex flex-row gap-x-1.5 items-center text-md font-[500] transition-colors ease-in-out duration-300 hover:text-blue-700 ">
+                    <p>Azizur Rahaman</p>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Checkbox -->
+    <div class=" p-10 flex flex-col gap-y-6">
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class="font-medium ">CheckBox</p>
+            <i class="fa-brands fa-square-js text-xl"></i>
+        </div>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+
+            <div
+                class="w-full flex flex-row flex-wrap items-center justify-center rounded-xl border border-slate-200 py-10 gap-5">
+
+                <!-- <input type="checkbox" class="w-5 h-5 disabled:cursor-not-allowed indeterminate:bg-blue-700" name="" id="checkbox-9"> -->
+
+                <div class="flex flex-row items-center gap-2 justify-center">
+                    <input type="checkbox" class="custom-checkbox" name="" id="unic">
+                    <label class=" ">
+                        Indeterminate
+                    </label>
+                </div>
+
+                <!--Default disabled checkbox-->
+
+                <div class="flex flex-row items-center gap-2 justify-center">
+                    <input
+                        class="cursor-not-allowed relative h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-secondary-500 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ms-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ms-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent disabled:opacity-60 rtl:float-right dark:border-neutral-400 dark:checked:border-primary dark:checked:bg-primary"
+                        type="checkbox" value="" id="flexCheckDisabled" disabled />
+                    <label class="cursor-not-allowed opacity-50 ">
+                        Disabled checkbox
+                    </label>
+                </div>
+
+                <!--Default disabled checked checkbox-->
+                <div class="flex flex-row items-center gap-2 justify-center">
+                    <input
+                        class="cursor-not-allowed w-4 h-4 rounded border-2 border-slate-400 transition-colors duration-300 ease-in-out checked:bg-blue-700 checked:hover:bg-blue-700 checked:disabled:border-slate-300 checked:disabled:bg-slate-300 checked:disabled:hover:bg-slate-300 disabled:hover:none disabled:cursor-not-allowed disabled:border-slate-200 disabled:indeterminate:border-slate-300 disabled:indeterminate:bg-slate-300 disabled:hover:bg-transparent hover:border-blue-700 hover:bg-blue-50 focus:ring-transparent indeterminate:bg-blue-700 indeterminate:disabled:hover:bg-slate-300"
+                        type="checkbox" value="" id="flexCheckCheckedDisabled" checked="" disabled />
+                    <label class=" cursor-not-allowed  opacity-50 ">
+                        Disabled checked checkbox
+                    </label>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Avatar Square with Badge -->
+    <div class=" p-10 flex flex-col gap-y-6">
+        <p class="font-medium ">Avatar Square with Badge</p>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class=" flex gap-8 items-center">
+
+                <div class="relative w-14 h-14 bg-blue-600  rounded-xl flex justify-center items-center ">
+                    <img src="./src/asset/download_image_1715790710785.png"
+                        class="overflow-hidden rounded-xl object-center" alt="">
+                    <div
+                        class="absolute bg-green-500 h-[10px] w-[10px] rounded-full ring-2 ring-slate-100 right-0 bottom-0">
+                    </div>
+                </div>
+
+                <div class="relative w-11 h-11 bg-blue-600  rounded-xl flex justify-center items-center ">
+                    <img src="./src/asset/download_image_1715790710785.png"
+                        class="overflow-hidden rounded-xl object-center" alt="">
+                    <div
+                        class="absolute bg-green-500 h-[10px] w-[10px] rounded-full ring-2 ring-slate-100 right-0 bottom-0">
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex gap-8 items-center">
+
+                <div class="relative w-14 h-14 bg-blue-600  rounded-xl flex justify-center items-center ">
+                    <p class="text-white font-medium text-xl">Aa</p>
+                    <div
+                        class="absolute bg-green-500 h-[10px] w-[10px] rounded-full ring-2 ring-slate-100 right-0 bottom-0">
+                    </div>
+                </div>
+
+                <div class="relative w-11 h-11 bg-blue-600  rounded-xl flex justify-center items-center ">
+                    <p class="text-white font-medium text-lg">Aa</p>
+                    <div
+                        class="absolute bg-green-500 h-[10px] w-[10px] rounded-full ring-2 ring-slate-100 right-0 bottom-0">
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex gap-8 items-center">
+
+                <div class="relative w-14 h-14 bg-blue-600  rounded-xl flex justify-center items-center ">
+                    <i class="fa-regular fa-user text-white font-medium text-xl"></i>
+                    <div
+                        class="absolute bg-green-500 h-[10px] w-[10px] rounded-full ring-2 ring-slate-100 right-0 bottom-0">
+                    </div>
+                </div>
+
+                <div class="relative w-11 h-11 bg-blue-600  rounded-xl flex justify-center items-center ">
+                    <i class="fa-regular fa-user text-white font-medium text-lg"></i>
+
+                    <div
+                        class="absolute bg-green-500 h-[10px] w-[10px] rounded-full ring-2 ring-slate-100 right-0 bottom-0">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Badge -->
+    <div class=" p-10 flex flex-col gap-y-6">
+        <p class="font-medium ">Badge</p>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium">Large Number Badge with Label</p>
+
+                <div class="flex flex-row flex-wrap gap-8">
+                    <div class="flex flex-row items-center gap-x-4">
+                        <button
+                            class="text-center cursor-text text-black bg-white text-lg font-semibold border border-slate-300 px-4 py-1 rounded-3xl">2</button>
+                        <p class="font-semibold text-md text-black">Default</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <button
+                            class="text-center cursor-text text-white bg-blue-700 text-lg font-semibold border border-blue-700 px-4 py-1 rounded-3xl">2</button>
+                        <p class="font-semibold text-md text-black">Primary</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <button
+                            class="text-center cursor-text text-blue-600 bg-blue-50 text-lg font-semibold border border-blue-400 px-4 py-1 rounded-3xl">2</button>
+                        <p class="font-semibold text-md text-black">Secondary</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <button
+                            class="text-center cursor-text text-green-600 bg-green-50 text-lg font-semibold border border-green-400 px-4 py-1 rounded-3xl">2</button>
+                        <p class="font-semibold text-md text-black">Success</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <button
+                            class="text-center cursor-text text-red-700 bg-red-50 text-lg font-semibold border border-red-700 px-4 py-1 rounded-3xl">2</button>
+                        <p class="font-semibold text-md text-black">Error</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <button
+                            class="text-center cursor-text text-amber-600 bg-amber-50 text-lg font-semibold border border-amber-700 px-4 py-1 rounded-3xl">2</button>
+                        <p class="font-semibold text-md text-blace">Warning</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium">Dot Badge with Label</p>
+
+                <div class="flex flex-row flex-wrap gap-8">
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span class="h-3 w-3 rounded-full bg-white border border-slate-300"></span>
+                        <p class="font-semibold text-md text-black">Default</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span class="h-3 w-3 rounded-full bg-blue-700 border border-blue-700"></span>
+                        <p class="font-semibold text-md text-blue-700">Primary</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span class="h-3 w-3 rounded-full bg-blue-50 border border-blue-400"></span>
+                        <p class="font-semibold text-md text-black">Secondary</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span class="h-3 w-3 rounded-full bg-lime-500 border border-lime-500"></span>
+                        <p class="font-semibold text-md text-green-700">Success</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span class="h-3 w-3 rounded-full bg-red-600 border border-red-600"></span>
+                        <p class="font-semibold text-md text-red-700">Error</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span class="h-3 w-3 rounded-full bg-yellow-400 border border-yellow-400"></span>
+                        <p class="font-semibold text-md text-amber-600">Warning</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Buttons -->
+    <div class=" p-10 flex flex-col gap-y-6">
+        <p class="font-medium "> Buttons </p>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> Social Button - GitHub </p>
+                <div class="flex flex-row items-center justify-center gap-10 flex-wrap">
+
+                    <button class=" socialBtn_Black">
+
+                        <i class="fa-brands fa-github text-xl"></i>
+
+                        <span class="">Sign in with GitHub</span>
+                    </button>
+
+                    <button class=" socialBtn_Black px-4">
+
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </button>
+
+                    <button class=" socialBtn_White">
+
+                        <i class="fa-brands fa-github text-xl"></i>
+
+                        <span class="">Sign in with GitHub</span>
+                    </button>
+
+                    <button class=" socialBtn_Black px-4">
+
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> Social Button - Apple </p>
+
+                <div class="flex flex-row items-center justify-center gap-10 flex-wrap">
+
+                    <button class=" socialBtn_Black">
+
+                        <i class="fa-brands fa-apple text-xl "></i>
+
+                        <span class="">Sign in with Apple</span>
+                    </button>
+
+                    <button class=" socialBtn_Black px-4">
+
+                        <i class="fa-brands fa-apple text-xl "></i>
+                    </button>
+
+                    <button class=" socialBtn_White">
+
+                        <i class="fa-brands fa-apple text-xl "></i>
+
+                        <span class="">Sign in with Apple</span>
+                    </button>
+
+                    <button class=" socialBtn_White px-4">
+
+                        <i class="fa-brands fa-apple text-xl "></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Divider -->
+    <div class=" p-10 flex flex-col gap-y-6">
+        <p class=" font-semibold"> Divider <a href="https://www.tailframes.com/components/divider"
+                class="linking_link">#</a></p>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class="relative flex flex-col items-start p-7 rounded-xl border border-slate-200 ">
+                <div class="absolute top-2 left-2">
+                    <p class="font-medium  bg-gray-100  py-0.5 px-4 rounded-md"> Horizontal Divider </p>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center max-w-[700px] *:text-lg divide-y-2 divider-gray-300 *:pt-4 gap-y-5 mt-2">
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
+                        probare, quae sunt a te dicta? Refert tamen, quo modo.
+                    </p>
+
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
+                        probare, quae sunt a te dicta? Refert tamen, quo modo.
+                    </p>
+
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
+                        probare, quae sunt a te dicta? Refert tamen, quo modo.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="relative flex flex-col items-start p-7 rounded-xl border border-slate-200 ">
+                <div class="absolute top-2 left-2">
+                    <p class="font-medium  bg-gray-100  py-0.5 px-4 rounded-md"> Vertical Divider </p>
+                </div>
+
+                <div
+                    class="flex flex-row justify-center max-w-[700px] *:text-lg divide-x-2 divider-gray-300 space-x-7 *:pl-7  *:first-line:leading-3 mt-4 *:text-justify pt-3">
+                    <p class="" style="padding-left: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
+                        probare, quae sunt a te dicta? Refert tamen, quo modo.
+                    </p>
+
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
+                        probare, quae sunt a te dicta? Refert tamen, quo modo.
+                    </p>
+
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
+                        probare, quae sunt a te dicta? Refert tamen, quo modo.
+                    </p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Input -->
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class=" font-semibold"> Input </p>
+            <i class="fa-brands fa-square-js text-xl"></i>
+            <a href="https://www.tailframes.com/components/input" class="linking_link">#</a>
+        </div>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> Dynamic Text Input </p>
+
+                <div
+                    class="inline-flex w-full flex-col items-start gap-1.5 stroke-black transition-colors duration-300 ease-in-out focus-within:stroke-blue-700 max-w-sm ">
+                    <p class="font-medium" id="dynamic_inputText">Default</p>
+                    <div class="relative w-full flex items-center stroke-blue-600 ocus-within:stroke-blue-700 ">
+                        <i class="fa-solid fa-user text-lg left-5 absolute " id="user_icon"></i>
+
+                        <input type="text"
+                            class="w-full  text-lg py-2.5 rounded-xl outline-none font-medium pl-12 pr-10 border border-slate-200   focus:ring-blue-600 focus:border-transparent duration-200 focus:ring-2"
+                            id="dynamic_input" placeholder="Enter Azizur Rahaman">
+
+                        <i class="fa-regular fa-eye right-4 absolute " id="eye_icon"></i>
+                    </div>
+
+                    <p class="font-medium" id="dynamic_helperText">Helper Text</p>
+                </div>
+
+            </div>
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> Disabled Input </p>
+
+                <div
+                    class="inline-flex w-full flex-col items-start gap-1.5 stroke-black transition-colors duration-300 ease-in-out focus-within:stroke-blue-700 max-w-sm ">
+                    <p class="font-medium text-slate-400">Default</p>
+                    <div class="relative w-full flex items-center *:text-slate-400 ">
+                        <i class="fa-solid fa-user text-lg left-5 absolute  cursor-not-allowed"></i>
+                        <p class="py-3 rounded-xl cursor-not-allowed pl-12 font-medium w-[500px] border"> Enter</p>
+                        <input type="text"
+                            class="w-full hidden cursor-not-allowed text-lg py-2.5 rounded-xl outline-none font-medium pl-12 pr-10 border border-slate-200  "
+                            placeholder="Enter Azizur Rahaman">
+
+                        <i class="fa-regular fa-eye right-4 absolute cursor-not-allowed "></i>
+                    </div>
+
+                    <p class="font-medium text-slate-400">Helper Text</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Radio -->
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class=" font-semibold"> Radio </p>
+            <a href="https://www.tailframes.com/components/radio" class="linking_link">#</a>
+        </div>
+
+        <div
+            class="flex justify-start items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-4 h-96 md:h-auto">
+
+
+
+            <div class="mb-[0.125rem] block min-h-[1.5rem] ps-[1.5rem]">
+                <input
+                    class="relative float-left -ms-[1.5rem] me-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-secondary-500 before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] disabled:pointer-events-none disabled:opacity-60 rtl:float-right dark:border-neutral-400 dark:checked:border-primary"
+                    type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled />
+                <label class="mt-px inline-block ps-[0.15rem] opacity-50 hover:pointer-events-none"
+                    for="flexRadioDisabled">
+                    Disabled radio
+                </label>
+            </div>
+            <div class="mb-[0.125rem] block min-h-[1.5rem] ps-[1.5rem]">
+                <input
+                    class="relative float-left -ms-[1.5rem] me-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-secondary-500 before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full cursor-not-allowed before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:outline-none focus:ring-
+                  
+                  
+                  
+                  0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] disabled:pointer-events-none disabled:opacity-60 rtl:float-right dark:border-neutral-400 dark:checked:border-primary"
+                    type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled />
+                <label class="mt-px inline-block ps-[0.15rem] opacity-50 hover:pointer-events-none"
+                    for="flexRadioCheckedDisabled">
+                    Disabled checked radio
+                </label>
+            </div>
+
+            <div class="flex gap-2.5">
+                <input type="radio" name="me" class="pree  border-slate-300 rounded-full   cursor-pointer" id="">
+                <label for="" class="font-medium ">Default</label>
+            </div>
+
+            <div class="flex gap-2.5">
+                <input type="radio" name="me"
+                    class=" border-slate-300 rounded-full  checked:border-blue-700 hover:border-blue-700  cursor-pointer"
+                    checked id="">
+                <label for="" class="font-medium ">Checked</label>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Rate -->
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class=" font-semibold"> Rate </p>
+            <i class="fa-brands fa-square-js text-xl"></i>
+            <a href="https://www.tailframes.com/components/rate" class="linking_link">#</a>
+        </div>
+
+        <div
+            class="flex justify-start items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-4 h-96 md:h-auto">
+
+            <div class="flex space-x-2 items-center justify-center text-xl">
+                <div class="half-star mt-[0.5px]"></div>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
+
+            <div class="flex space-x-2 items-center justify-center text-xl">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <div class="half-star mt-[0.5px]"></div>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
+            <div class="flex space-x-2 items-center justify-center text-xl">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <div class="half-star mt-[0.5px]"></div>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
+
+            <div class="flex space-x-2 items-center justify-center text-xl">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <div class="half-star mt-[0.5px]"></div>
+                <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
+            <div class="flex space-x-2 items-center justify-center text-xl">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <div class="half-star mt-[0.5px]"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Segmented Control  -->
+
+
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class=" font-semibold"> Segmented Control </p>
+            <i class="fa-brands fa-square-js text-xl"></i>
+            <a href="https://www.tailframes.com/components/segmented-control" class="linking_link">#</a>
+        </div>
+
+        <div
+            class="flex justify-start items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-4 h-96 md:h-auto">
+
+            <div class="flex py-[3.5px] px-[4px] bg-gray-100 rounded-lg shadow-sm *:text-slate-500">
+                <a class="segmented segmented_active" id="segment1">
+                    <i class="fa-brands fa-github text-[18px]"></i>
+                    <span class="font-bold  text-[13px]"> GitHub</span>
+                </a>
+                <a class="segmented sigment_hover" id="segment2">
+                    <i class="fa-solid fa-basketball text-[18px]"></i>
+                    <span class="font-bold  text-[13px]"> Dribble</span>
+                </a>
+                <a class="segmented sigment_hover" id="segment3">
+                    <i class="fa-brands fa-youtube text-[18px]"></i>
+                    <span class="font-bold  text-[13px]"> YouTube</span>
+                </a>
+
+                <a class=" flex items-center rounded-lg py-[3.5px] gap-2 px-3 *:text-gray-400 cursor-not-allowed">
+                    <i class="fa-brands fa-facebook text-[18px]"></i>
+                    <span class="font-bold  text-[13px]"> YouTube</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Spinner -->
+
+    <div class=" p-10 flex flex-col gap-y-6">
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class=" font-semibold"> Input </p>
+            <i class="fa-brands fa-square-js text-sm"></i>
+            <a href="https://www.tailframes.com/components/input" class="linking_link">#</a>
+        </div>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> SVG </p>
+
+                <div class="flex sm:flex-row flex-col gap-4 item-center">
+
+                    <div class="inline-flex flex-col items-center justify-center gap-3">
+                        <div class="relative size-4">
+                            <div class="absolute rounded-full border-blue-100 size-4 border"></div>
+                            <svg width="100%" height="100%" fill="none" class="absolute animate-spin stroke-blue-700"
+                                xmlns="http://www.w3.org/2000/svg" stroke-width="1.2" viewBox="1 0.25 23 23.5">
+                                <path d="M12.5 23c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-semibold leading-tight text-blue-700">Small</span>
+                    </div>
+
+                    <div class="inline-flex flex-col items-center justify-center gap-3">
+                        <div class="relative size-6">
+                            <div class="absolute rounded-full border-blue-100 size-6 border-2"></div>
+                            <svg width="100%" height="100%" fill="none" class="absolute animate-spin stroke-blue-700"
+                                xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="1 0.25 23 23.5">
+                                <path d="M12.5 23c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-semibold leading-tight text-blue-700">Mediam</span>
+                    </div>
+
+                    <div class="inline-flex flex-col items-center justify-center gap-3">
+                        <div class="relative size-8">
+                            <div class="absolute rounded-full border-blue-100 size-8 border-[3px]"></div>
+                            <svg width="100%" height="100%" fill="none" class="absolute animate-spin stroke-blue-700"
+                                xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="1 0.125 23 23.75">
+                                <path d="M12.5 23c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-semibold leading-tight text-blue-700">Large</span>
+                    </div>
+
+                    <div class="inline-flex flex-col items-center justify-center gap-3">
+                        <div class="relative size-10">
+                            <div class="absolute rounded-full border-blue-100 size-10 border-[4px]"></div>
+                            <svg width="100%" height="100%" fill="none" class="absolute animate-spin stroke-blue-700"
+                                xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="1 0.25 23 23.5">
+                                <path d="M12.5 23c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-semibold leading-tight text-blue-700">X-Large</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> Font Awesome </p>
+
+
+
+                <div class="flex sm:flex-row flex-col gap-4 item-center ">
+                    <div class="flex items-center justify-center">
+                        <i class="fa-solid fa-spinner text-blue-600 text-4xl spinner"></i>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fa-solid fa-yin-yang text-blue-600 text-4xl spinner"></i>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fa-solid fa-circle-notch text-green-600 text-4xl spinner"></i>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fa-solid fa-sync text-red-600 text-4xl spinner"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Switch -->
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+            <p class=" font-semibold"> Switch </p>
+            <!-- <i class="fa-brands fa-square-js text-xl"></i> -->
+            <a href="https://www.tailframes.com/components/input" class="linking_link">#</a>
+        </div>
+
+        <div
+            class="flex flex-col md:flex-row justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl gap-10 h-96 md:h-auto">
+
+
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-[40px] h-[22px] duration-300   border  rounded-full peer  peer-checked:after:duration-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full 
+                    peer-checked:after:bg-white  after:content-[''] after:absolute after:top-[2px] after:start-[2px] peer-checked:after:end-[2px] after:bg-blue-600 after:rounded-full after:h-4 after:w-4 after:transition-all after:duration-300 peer-checked:duration-300 peer-checked:bg-blue-600">
+                </div>
+                <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+            </label>
+
+          
+            <div class="inline-flex items-center justify-center">
+                <label class="font-medium transition-colors duration-300 ease-in-out peer-disabled:opacity-70 text-xs flex items-center" for="switch-13">
+                  <div class="relative">
+                    <input id="switch-13" class="peer sr-only" type="checkbox" checked="" name="switch">
+                    <div
+                      class="block cursor-pointer rounded-full border border-slate-300 bg-slate-50 transition duration-300 peer-checked:border-blue-700 peer-checked:bg-blue-700 peer-disabled:cursor-not-allowed peer-disabled:border-slate-100 peer-disabled:bg-slate-100 h-5 w-10">
+                    </div>
+                    <div
+                      class="absolute top-0.5 z-10 cursor-pointer rounded-full border border-slate-50 bg-blue-700 transition duration-300 peer-checked:translate-x-5 peer-checked:border-blue-700 peer-checked:bg-white peer-disabled:cursor-not-allowed peer-disabled:border-slate-100 peer-disabled:bg-slate-400 left-[2px] size-4">
+                    </div>
+                  </div>
+                  <span class="ml-2 cursor-pointer whitespace-nowrap text-xs font-medium leading-none text-black">Checked</span>
+                </label>
+              </div>
+
+              <div class="inline-flex items-center justify-center">
+                <label class="font-medium transition-colors duration-300 ease-in-out peer-disabled:opacity-70 text-xs flex items-center" for="switch-3">
+                  <div class="relative">
+                    <input id="switch-3" class="peer sr-only" type="checkbox" disabled name="">
+                    <div
+                      class="block cursor-pointer rounded-full borderpeer-disabled:cursor-not-allowed peer-disabled:border-slate-100 peer-disabled:bg-slate-100 h-5 w-10">
+                    </div>
+                    <div
+                      class="absolute top-0.5 z-10 cursor-pointer rounded-full border border-slate-50 bg-blue-700 transition duration-300 peer-checked:translate-x-5 peer-checked:border-blue-700 peer-checked:bg-white peer-disabled:cursor-not-allowed peer-disabled:border-slate-100 peer-disabled:bg-slate-400 left-[2px] size-4">
+                    </div>
+                  </div>
+                  <span class="ml-2 cursor-pointer whitespace-nowrap text-xs font-medium leading-none text-black">Disabled</span>
+                </label>
+              </div>
+            
+              <div class="inline-flex items-center justify-center">
+                <label class="font-medium transition-colors duration-300 ease-in-out peer-disabled:opacity-70 text-xs flex items-center" for="switch-4">
+                  <div class="relative">
+                    <input id="switch-3" class="peer sr-only" type="checkbox" disabled name="">
+                    <div
+                      class="block cursor-pointer rounded-full borderpeer-disabled:cursor-not-allowed peer-disabled:border-slate-100 peer-disabled:bg-slate-100 h-5 w-10 ">
+                    </div>
+                    <div
+                      class="absolute top-0.5 z-10 cursor-pointer rounded-full border border-slate-50 bg-blue-700 transition duration-300 peer-checked:translate-x-5 peer-checked:border-blue-700 peer-checked:bg-white peer-disabled:cursor-not-allowed peer-disabled:border-slate-100 peer-disabled:bg-slate-400 right-[2px] size-4">
+                    </div>
+                  </div>
+                  <span class="ml-2 cursor-pointer whitespace-nowrap text-xs font-medium leading-none text-black">Selected Disabled</span>
+                </label>
+              </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Tabs -->
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+    <p class=" font-semibold"> Tabs </p>
+    <i class="fa-brands fa-square-js text-xl "></i>
+    <a href="https://www.tailframes.com/components/tabs" class="linking_link">#</a>
+    </div>
+        
+        <div
+            class="flex justify-start items-center px-10 py-14 border-2 border-gray-300 rounded-xl flex-col gap-4 h-96 md:h-auto w-full">
+            
+            <div class="flex flex-row scroll-m-28 gap-8 border-b w-full">
+                <button id="tab1" class="flex items-center gap-2 ease-in-out transition-all duration-300 hover:opacity-80 disabled:cursor-not-allowed py-2.5 btnTab_active  text-blue-700">
+                    <i class="fa-regular fa-user text-blue-700"></i>
+                    <span class="text-sm font-semibold text-blue-700 ">Tab 1</span>
+                    <div class="inline-block border rounded-full px-2 text-sm bg-blue-700 text-white border-blue-700 font-medium">100</div>
+                </button>
+                <button id="tab2" class="flex items-center gap-2 ease-in-out transition-all duration-300 hover:opacity-80 disabled:cursor-not-allowed py-2.5 border-b-2 border-transparent">
+                    <i class="fa-regular fa-user text-slate-500"></i>
+                    <span class="text-sm font-medium text-slate-600 ">Tab 2</span>
+                    <div class="inline-block border rounded-full px-2 text-sm bg-blue-50 border-blue-400 text-blue-700 font-medium">100</div>
+                </button>
+                <button id="tab3" class="flex items-center gap-2 ease-in-out transition-all duration-300 hover:opacity-80 disabled:cursor-not-allowed py-2.5 border-b-2 border-transparent">
+                    <i class="fa-regular fa-user text-slate-500"></i>
+                    <span class="text-sm font-medium text-slate-600 ">Tab 3</span>
+                    <div class="inline-block border rounded-full px-2 text-sm bg-blue-50 border-blue-400 text-blue-700 font-medium">100</div>
+                </button>
+                <button id="tab4" class="flex items-center gap-2 ease-in-out transition-all duration-300 hover:opacity-80 disabled:cursor-not-allowed py-2.5 border-b-2 border-transparent">
+                    <i class="fa-regular fa-user text-slate-500"></i>
+                    <span class="text-sm font-medium text-slate-600 ">Tab 4</span>
+                    <div class="inline-block border rounded-full px-2 text-sm bg-blue-50 border-blue-400 text-blue-700 font-medium">100</div>
+                </button>
+                <button id="tab5" class="flex items-center gap-2 ease-in-out transition-all duration-300 hover:opacity-80 disabled:cursor-not-allowed py-2.5 border-b-2 border-transparent">
+                    <i class="fa-regular fa-user text-slate-500"></i>
+                    <span class="text-sm font-medium text-slate-600 ">Tab 5</span>
+                    <div class="inline-block border rounded-full px-2 text-sm bg-blue-50 border-blue-400 text-blue-700 font-medium">100</div>
+                </button>
+            </div>
+            
+            <div class="w-full items-center justify-start">
+                <p id="tabContent1" class="">Content of tab 1</p>
+                <p id="tabContent2" class="hidden">Content of tab 2</p>
+                <p id="tabContent3" class="hidden">Content of tab 3</p>
+                <p id="tabContent4" class="hidden">Content of tab 4</p>
+                <p id="tabContent5" class="hidden">Content of tab 5</p>
+            </div>
+             
+            
+
+        </div>
+    </div>
+
+
+    <!-- tooltip -->
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+    <p class=" font-semibold"> Input </p>
+    <i class="fa-brands fa-square-js text-xl"></i>
+    <a href="https://www.tailframes.com/components/input" class="linking_link">#</a>
+    </div>
+        
+        <div
+            class="flex justify-start items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-6 h-96 md:h-auto">
+
+            <div class="flex  items-center justify-start gap-4">
+        
+                <div class="group relative inline-block whitespace-nowrap">
+
+                  <span class="flex size-6 cursor-pointer items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">i</span>
+                  <span
+                    class="pointer-events-none absolute z-50 inline-flex items-center justify-center rounded-md px-3 py-1 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 bg-blue-100 font-[600] text-blue-700 min-h-7 text-sm left-1/2 -translate-x-1/2 after:absolute after:block after:size-0 after:border-8 after:border-transparent after:border-t-blue-100 after:-bottom-[0.95rem] after:left-1/2 after:-translate-x-1/2 top-[-2.5rem]">
+                    Top tooltip</span>
+                </div>
+                <!-- Label -->
+                <span class="text-sm text-slate-500">Top</span>
+              </div>
+
+        
+                <div class="flex items-center justify-start gap-4">
+                    <!-- Primary Right Tooltip -->
+                    <div class="group relative inline-block whitespace-nowrap">
+                      <!-- Tooltip Target -->
+                      <span class="flex size-6 cursor-pointer items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">i</span>
+                      <span role="tooltip"
+                        class="pointer-events-none absolute z-50 inline-flex items-center justify-center rounded-md px-3 py-1 font-semibold opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 bg-blue-100 text-blue-700 min-h-7 text-sm left-[calc(100%+0.75rem)] top-1/2 -translate-y-1/2 after:absolute after:block after:size-0 after:border-8 after:border-transparent after:border-r-blue-100 after:-left-[0.95rem] after:top-1/2 after:-translate-y-1/2">
+                        Right tooltip</span>
+                    </div>
+                    <!-- Label -->
+                    <span class="text-sm text-slate-500">Right</span>
+                  </div>
+
+                  
+                  
+                  <div class="flex items-center justify-start gap-4">
+                    <!-- Primary Left Tooltip -->
+                    <div class="group relative inline-block whitespace-nowrap">
+                      <!-- Tooltip Target -->
+                      <span class="flex size-6 cursor-pointer items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">i</span>
+                      <span role="tooltip"
+                        class="pointer-events-none absolute z-50 inline-flex items-center justify-center rounded-md px-3 py-1 font-semibold opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 bg-blue-100 text-blue-700 min-h-7 text-sm right-[calc(100%+0.75rem)] top-1/2 -translate-y-1/2 after:absolute after:block after:size-0 after:border-8 after:border-transparent after:border-l-blue-100 after:-right-[0.95rem] after:top-1/2 after:-translate-y-1/2">
+                        Left tooltip</span>
+                    </div>
+                    <!-- Label -->
+                    <span class="text-sm text-slate-500">Left</span>
+                  </div>
+
+
+                  <div class="flex items-center justify-start gap-4">
+                    <!-- Primary Bottom Tooltip -->
+                    <div class="group relative inline-block whitespace-nowrap">
+                      <!-- Tooltip Target -->
+                      <span class="flex size-6 cursor-pointer items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">i</span>
+                      <span role="tooltip"
+                        class="pointer-events-none absolute z-50 inline-flex items-center justify-center rounded-md px-3 py-1 font-semibold opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 bg-blue-100 text-blue-700 min-h-7 text-sm left-1/2 -translate-x-1/2 after:absolute after:block after:size-0 after:border-8 after:border-transparent after:border-b-blue-100 after:-top-[0.95rem] after:left-1/2 after:-translate-x-1/2 bottom-[-2.5rem]">
+                        Bottom tooltip</span>
+                    </div>
+                    <!-- Label -->
+                    <span class="text-sm text-slate-500">Bottom</span>
+                  </div>
+              
+
+        </div>
+    </div>
+
+
+    <!-- Multi Elements -->
+    <!-- 
+    <div class=" p-10 flex flex-col gap-y-6">
+        <div class="flex flex-row gap-x-4 items-center">
+    <p class=" font-semibold"> Input </p>
+    <i class="fa-brands fa-square-js text-sm"></i>
+    <a href="https://www.tailframes.com/components/input" class="linking_link">#</a>
+    </div>
+        <div
+            class="flex justify-center items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-8 h-auto">
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium">  NAME </p>
+
+
+            </div>
+
+            <div class="w-full flex flex-col items-center justify-center rounded-xl border border-slate-200 py-5 gap-5">
+                <p class="font-medium"> NAME </p>
+
+
+            </div>
+
+
+        </div>
+    </div> 
+    -->
+
+
+    <!-- Single Element -->
+    <!-- 
+    <div class=" p-10 flex flex-col gap-y-6">
+
+        <div class="flex flex-row gap-x-4 items-center">
+    <p class=" font-semibold"> Input </p>
+    <i class="fa-brands fa-square-js text-xl"></i>
+    <a href="https://www.tailframes.com/components/input" class="linking_link">#</a>
+    </div>
+        
+        <div
+            class="flex justify-start items-center px-7 py-14 border-2 border-gray-300 rounded-xl flex-col gap-4 h-96 md:h-auto">
+
+        </div>
+    </div>
+     -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
