@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* for according text */
+.rotate_180{
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+
+@layer base{
+
+    /* for linking */
+    .linking_link{
+      @apply  text-xl border-b-2 border-black hover:border-blue-600 cursor-pointer ml-3 font-bold duration-200 hover:text-blue-700;
+    }
+
+    /* for according text */
+    .vissible_icons{
+        @apply text-[16px] font-semibold text-slate-600 transform transition-transform duration-500;
+    }
+    .expander{
+        @apply cursor-pointer flex w-full flex-col border border-slate-200 bg-white rounded-lg py-3 px-5 hover:bg-gray-50  duration-100  ease-in-out;
+     }
+
+     /* Buttons */
+     .socialBtn_Black{
+        @apply flex gap-5 font-medium text-white bg-black duration-300 hover:bg-white ease-linear transition-all border rounded-xl items-center py-3 px-6  border-black  hover:border hover:border-slate-300 *:hover:text-black *:duration-300;
+     }
+
+     .socialBtn_White{
+        @apply flex gap-5 font-medium text-black bg-white duration-300 hover:bg-black ease-linear transition-all border rounded-xl items-center py-3 px-6  border-slate-300  hover:border hover:border-black *:hover:text-white *:duration-300;
+     }
+
+     /* checkbox */
+     .custom-checkbox {
+        @apply appearance-none w-5 h-5 hover:border-slate-400 hover:bg-blue-50 bg-white border-2 border-slate-300 rounded transition-colors duration-300 relative;
+    }
+
+    .active_custom-checkbox:checked {
+        @apply bg-blue-700 border-blue-700 hover:bg-blue-800 text-white;
+    }
+
+    .custom-checkbox:checked::before {
+        content: '\2713'; /* Unicode checkmark */
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white  text-xs;
+        font-weight: bold;
+    }
+    .custom-checkbox:indeterminate::before {
+        content: ''; /* Empty content for indeterminate state */
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-xs;
+        width: 60%;
+        height: 2px;
+        border-radius: 30%;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    /* for radio input */
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 23px;
+        height: 23px;
+        border: 3px solid #cbd5e0; /* Border color (gray-300) */
+        border-radius: 50%;
+        position: relative;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type="radio"]:checked::before {
+        content: '';
+        position: absolute;
+        top: 12%;
+        bottom:12%;
+        left: 10%;
+        right: 10%;
+        width: 78%;
+        height: 78%;
+        border-radius: 50%;
+        background-color: #4175c9; /* Background color when checked (blue-500) */
+    }
+
+
+    /* Rate */
+
+    .half-star {
+        position: relative;
+        display: inline-block;
+        color: #fbbf24; /* yellow-400 for filled star */
+    }
+    .half-star::before {
+        content: '\f089'; /* Unicode for half star (Font Awesome) */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        overflow: hidden;
+        color: #fbbf24; /* yellow-400 for half-filled star */
+    }
+    .half-star::after {
+        content: '\f005'; /* Unicode for full star (Font Awesome) */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #d1d5db; /* gray-300 for empty star */
+    }
+
+
+    /* for Segment Control */
+    .segmented_active{
+        @apply bg-white *:text-slate-700   shadow;
+    }   
+    .sigment_hover{
+        @apply *:hover:text-slate-600 ;
+    }
+    .segmented{
+        @apply flex items-center rounded-lg py-[3.5px] gap-2 px-3 *:duration-300  transition-all ease-in-out cursor-pointer;
+    }
+
+    /* for spinner */
+    .spinner {
+        animation: spin 1.5s linear infinite;
+    }
+
+
+    /* for tabs */
+    .btnTab_active{
+        @apply border-b-2 border-blue-700 ;
+    }
+    .tabIcon_active{
+        @apply text-blue-700;
+    }
+    .tabText_active{
+        @apply text-blue-700 font-bold;
+    }
+    .tabBadge_active{
+        @apply bg-blue-700 text-white border-blue-700;
+    }
+}
